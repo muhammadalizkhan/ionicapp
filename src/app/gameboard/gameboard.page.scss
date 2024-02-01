@@ -1,0 +1,31 @@
+ion-toolbar{
+  width: 90%;
+  margin: auto;
+  margin-top: 3% !important;
+}
+.label-container-two {
+  --transition: background-color 0.3s ease-in-out,
+  --transform 0.3s ease-in-out;
+}
+
+.label-container-two:hover {
+  --background-color: #555; /* Darker background color on hover */
+  --transform: scale(1.05); /* Scale up on hover for a subtle animation */
+}
+.game-level-label {
+  font-size: 1.2em;
+  color: #fff; /* Text color */
+  margin-bottom: 8px;
+}
+.label-container-two {
+  margin-top: 2% !important;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
+  --background-color: #333; /* Dark background color */
+  padding: 10px;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}

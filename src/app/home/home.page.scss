@@ -1,27 +1,107 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.label-container {
+  width: 90%;
+  margin: auto;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.game-level-label {
+  font-size: 1.5em;
+  color: #fff;
+}
+ion-card.custom-card {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  transition: transform 0.2s ease-in-out; /* Transition for smooth animation */
+
+  ion-card-header {
+    background-color: #555; /* Darker header background color */
+  }
+
+  &.selected {
+    transform: scale(1.05); /* Scale up when selected for a subtle animation */
+  }
+
+  ion-card-title {
+    color: #fff; /* Text color for card title */
+  }
+
+  p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-item{
+  ion-range {
+    margin-top: 3% !important;
+    --bar-background: #a2d2ff;
+    --bar-background-active: #bde0fe;
+    --bar-height: 8px;
+    --bar-border-radius: 8px;
+    --knob-background: #ffc8dd;
+    --knob-size: 40px;
+    --pin-background: #ffafcc;
+    --pin-color: #fff;
+  }
 }
 
-#container a {
-  text-decoration: none;
+// .label-container-two{
+//   margin-top: 2% !important ;
+//   width: 90%;
+//   margin: auto;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: start;
+// }
+
+.label-container-two {
+  margin-top: 2% !important;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
+  background-color: #333; /* Dark background color */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+}
+
+.game-level-label {
+  font-size: 1.2em;
+  color: #fff; /* Text color */
+  margin-bottom: 8px;
+}
+
+/* Add transitions for smooth animations */
+.label-container-two {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.label-container-two:hover {
+  background-color: #555; /* Darker background color on hover */
+  transform: scale(1.05); /* Scale up on hover for a subtle animation */
+}
+ion-button {
+  margin-top: 5% !important;
+  width: 70%;
+  margin: auto;
+  display: block;
+  --background: linear-gradient(to bottom, #ff4d4d, #ff1a1a) !important;
+  --color: #fff;
+  font-weight: bold;
+  --border-radius: 10px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --transition: background 0.3s ease-in-out,
+                --transform 0.2s ease-in-out,
+                --box-shadow 0.3s ease-in-out;
+  --pressed-background: linear-gradient(to bottom, #ff4d4d, #ff1a1a) !important;
+}
+
+ion-button:hover {
+  --background-color: #45a049; /* Darker green on hover */
+  --transform: scale(1.05); /* Slightly scale up on hover for a subtle effect */
+}
+
+ion-button:active {
+  --transform: scale(0.95); /* Slightly scale down on click for a button press effect */
 }

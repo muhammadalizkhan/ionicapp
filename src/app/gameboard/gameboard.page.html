@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Game Board</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="label-container-two">
+    <ion-label class="game-level-label">Your Selected Level: {{ selectedLevel }}</ion-label>
+    <ion-label class="game-level-label">Your Selected Number: {{ selectedNumber }}</ion-label>
+  </div>
+
+  <ion-item lines="none" mode="ios">
+    <ion-label position="floating">Enter Your Guess Number</ion-label>
+    <ion-input type="number" [(ngModel)]="userGuess"></ion-input>
+  </ion-item>
+
+  <ion-item lines="none" mode="ios">
+    <ion-label position="floating">Hint</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-card class="label-container-two">
+    <ion-label class="game-level-label">Time: {{ time }}</ion-label>
+    <ion-label class="game-level-label">Penalty: {{ penalty }}</ion-label>
+    <ion-label class="game-level-label">Win: {{ wins }}</ion-label>
+    <ion-label class="game-level-label">Loss: {{ losses }}</ion-label>
+    <ion-label class="game-level-label">Win Streak: {{ winStreak }}</ion-label>
+  </ion-card>
+
+  <ion-button expand="block" (click)="checkGuess()">Submit Guess</ion-button>
+</ion-content>
